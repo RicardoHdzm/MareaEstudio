@@ -1,0 +1,288 @@
+html, body{
+	background-color: #1a1a1a;
+	color: #f2f2f2;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+div{
+	margin: 0!important;
+	padding: 0!important;
+}
+
+.navbar{
+	background-color: rgba(26,26,26,.6);
+	font-size: medium;
+	color:#f2f2f2;
+}
+
+.navbar-nav>a{
+	color:#f2f2f2!important;
+	font-size: small;
+	font-weight: bold;
+}
+
+.navbar-nav>a:hover{
+	color:#c4c2c2!important;
+
+}
+
+.home{
+	height: 100vh;
+	background-image: url(../img/backgrounds/bg1.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+
+.about{
+	height: 100vh;
+	background-color: #1a1a1a;
+}
+
+.contact{
+	height: fit-content;
+	background-color: #1a1a1a;
+	padding-top: 6rem!important;
+	padding-bottom: 6rem!important;
+}
+
+
+
+
+.home h1{
+	font-size: 120px;
+	display: inline;
+}
+
+
+.contact h1{
+	font-size: 80px;
+	display: inline;
+}
+
+.about h1{
+	font-size: 100px;
+	display: inline;
+}
+
+.proyects h1{
+	font-size: 80px;
+	display: inline;
+}
+
+.proyects{
+	color: #1a1a1a;
+	height: 100vh;
+	background-color: #f2f2f2;
+	background-image: url("../img/backgrounds/bg2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.text-center{
+  bottom: 0;
+  top: 45%;
+}
+
+
+.header-logo{
+	width: 150px;
+}
+
+.footer{
+	background-color: #1a1a1a;
+	height: fit-content;
+	font-size: small;
+	color: #f2f2f2;
+}
+
+.img-footer{
+	width: 200px;
+}
+
+.align-items-center {
+  display: flex; 
+  align-items: center;  /*Aligns vertically center */
+  justify-content: center; /*Aligns horizontally center */
+}
+
+.navicon{
+	filter: invert(100%);
+	width: 45px;
+}
+
+.navicon:hover{
+	opacity: .7;
+}
+
+.arrow-size{
+	font-size: xx-large	;
+	user-select: none;
+	padding: 6px;
+}
+
+#topBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 60px; /* Place the button at the bottom of the page */
+  right: 35px; /* Place the button 30px from the right */
+  z-index: 90; /* Make sure it does not overlap */
+  outline: none; /* Remove outline */
+  background-color: rgba(0, 0, 0, .5); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  font-weight: bolder;
+  transition: 0.5s ease;
+  border: none;
+
+}
+
+#topBtn:hover {
+	background-color: rgba(0, 0, 0, .8);
+}
+
+.icon-size{
+  vertical-align:bottom;
+  font-size: 22px;
+}
+
+.social-icon{
+	width: 25px;
+	height: 25px;
+	filter: invert(100%);
+	filter: brightness(2);
+	margin-right: 20px;
+}
+
+.centering{
+	text-align: center;
+}
+
+.social-icon:hover{
+	opacity: .8;
+}
+
+.img-footer{
+	width: 150px;
+}
+
+
+
+
+
+ .form-control{
+ 	background-color: transparent;
+  	border-top: none;
+  	border-left: none;
+  	border-right: none;
+  	border-radius: 0;
+  	color: #f2f2f2;
+  	border-color: #f2f2f2;
+  	border-width: 2px;
+  	font-size: medium;
+}
+
+.form-control:focus, .form-control:active{
+	background-color: transparent;
+	outline: none !important;
+ 	box-shadow: none;
+ 	color: whitesmoke;
+}
+
+option{
+	background-color: #1a1a1a;
+}
+
+.form-border{
+	border: solid!important;
+	border-color: black;
+	border-width: 2px!important;
+}
+
+.form-control:focus, .form-control:active{
+	border-color: white;
+}
+
+::placeholder{
+	color: white!important;
+}
+
+ .map-container{
+  overflow:hidden;
+  position:relative;
+  height: 0;
+}
+
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  filter: grayscale(100%) brightness(1);
+}
+
+.contact-btn{
+	background-color: #f2f2f2;
+	font-size: small;
+	font-weight: ;
+	border-radius: 0px;
+}
+
+.contact-btn:hover{
+	background-color: gray;
+	color: white;
+}
+
+.navbar-toggler{
+	border: none;
+}
+
+.navbar-toggler:focus, .navbar-toggler:active{
+	border: none!important;
+	outline: none !important;
+ 	box-shadow: none;
+}
+
+@media only screen and (max-width: 760px){
+
+	body{
+		text-align: center!important;
+	}
+
+	h1{
+		font-size: 50px!important;
+	}
+
+	h3{
+		padding: 40px;
+		font-size: large;
+	}
+
+	.contact{
+		height: fit-content;
+	}
+ }
+
+
+ /* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f2f2f2 ;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: whitesmoke;
+}
