@@ -1,5 +1,5 @@
 html, body{
-	background-color: #1a1a1a;
+	background-color: black;
 	color: #f2f2f2;
 	font-family: 'Poppins', sans-serif;
 	scroll-behavior: smooth;
@@ -11,7 +11,7 @@ div{
 }
 
 .navbar{
-	background-color: rgba(26,26,26,.6);
+	background-color: rgba(0,0,0,.5);
 	font-size: medium;
 	color:#f2f2f2;
 }
@@ -29,7 +29,7 @@ div{
 
 .home{
 	height: 100vh;
-	background-image: url(../img/backgrounds/bg1.jpg);
+	background-image: url(../img/backgrounds/bg5.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -38,7 +38,6 @@ div{
 
 .about{
 	height: 100vh;
-	background-color: #1a1a1a;
 }
 
 .contact{
@@ -46,8 +45,33 @@ div{
 	background-color: #1a1a1a;
 	padding-top: 6rem!important;
 	padding-bottom: 6rem!important;
+	background-color: black;
+	background-image: url(../img/backgrounds/bg6.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
 }
 
+.proyects{
+	color: #f2f2f2;
+	height: fit-content;
+	padding-top: 15rem!important;
+	padding-bottom: 10rem!important;
+	background-color: #f2f2f2;
+	background-image: url(../img/backgrounds/bg3.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+
+.footer{
+	background-color: black;
+	height: fit-content;
+	font-size: small;
+	color: #f2f2f2;
+}
 
 
 
@@ -58,7 +82,7 @@ div{
 
 
 .contact h1{
-	font-size: 80px;
+	font-size: 50px;
 	display: inline;
 }
 
@@ -68,15 +92,32 @@ div{
 }
 
 .proyects h1{
-	font-size: 80px;
+	font-size: 50px;
 	display: inline;
 }
 
-.proyects{
-	color: #1a1a1a;
-	height: 100vh;
-	background-color: #f2f2f2;
+.proyects P{
+	font-size: small;
+	font-weight: bold;
 }
+
+
+.proyects-logo{
+	width: 150px;
+	filter: invert(100%);
+}
+
+.proyects-logo:hover{
+	opacity: .8;
+}
+
+.border-proyect{
+	border-left: solid;
+	border-right: solid;
+	border-color: #dedede;
+	border-width: 2px;
+}
+
 
 .text-center{
   bottom: 0;
@@ -88,12 +129,6 @@ div{
 	width: 150px;
 }
 
-.footer{
-	background-color: #1a1a1a;
-	height: fit-content;
-	font-size: small;
-	color: #f2f2f2;
-}
 
 .img-footer{
 	width: 200px;
@@ -107,7 +142,7 @@ div{
 
 .navicon{
 	filter: invert(100%);
-	width: 45px;
+	width: 35px;
 }
 
 .navicon:hover{
@@ -164,20 +199,16 @@ div{
 	width: 150px;
 }
 
-
-
-
-
- .form-control{
+.form-control{
  	background-color: transparent;
-  	border-top: none;
-  	border-left: none;
-  	border-right: none;
-  	border-radius: 0;
-  	color: #f2f2f2;
-  	border-color: #f2f2f2;
-  	border-width: 2px;
-  	font-size: medium;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+ 	border-radius: 0;
+ 	color: #f2f2f2;
+ 	border-color: #f2f2f2;
+ 	border-width: 2px;
+  font-size: medium;
 }
 
 .form-control:focus, .form-control:active{
@@ -242,6 +273,67 @@ option{
  	box-shadow: none;
 }
 
+.gallery{
+  position: relative;
+  background-color: #010101;
+  color: #D6B379;
+  font-size: x-small;
+  height: fit-content;
+  text-align: center;
+}
+
+.img-gallery{
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  overflow: hidden;
+  z-index: 2;
+  	filter: grayscale(100%);
+
+}
+
+.img-mrg{
+  padding-right:0;
+  padding-left:0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.img-mrg:hover .overlay {
+  opacity: .9;
+}
+
+.img-mrg:hover .img-gallery{
+	transform:scale(1.2);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: small;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 @media only screen and (max-width: 760px){
 
 	body{
@@ -260,6 +352,10 @@ option{
 	.contact{
 		height: fit-content;
 	}
+
+	.border-proyect{
+		border: none!important;
+	}
  }
 
 
@@ -270,7 +366,7 @@ option{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: black;
 }
 
 /* Handle */
